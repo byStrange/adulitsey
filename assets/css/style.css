@@ -1,0 +1,24 @@
+@import url("defaults.css");
+@import url("root.css");
+
+.navbar {
+    background-color: #fff;;
+}
+
+.navbar-nav.caret-parent{
+    position: relative
+}
+
+.navbar-nav.caret-parent .caret {
+    height: 3px;
+    background: #505050;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+
+body {
+    background-color: #F9F9F9;
+}
