@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/splide.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>ADU akademik litseyi</title>
@@ -11,7 +12,7 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="/" style="width: 70px;">
+        <a class="navbar-brand" href="/" style="width: 70px">
           <img src="assets/img/logo.png" alt="logo" width="50" />
         </a>
         <button
@@ -25,7 +26,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbar">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbar"
+        >
           <ul class="navbar-nav mb-2 mb-lg-0 caret-parent">
             <div class="caret"></div>
             <li class="nav-item dropdown">
@@ -48,41 +52,74 @@
               </ul>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="/contact" class="nav-link">Bog'lanish</a>
             </li>
             <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  O'quvchilar uchun
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Dars jadvali</a>
-                  </li>
-                  <li><hr class="dropdown-divider" />Blok test</li>
-                  <li><a class="dropdown-item" href="#">Foydali resurslar</a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-              </li>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                O'quvchilar uchun
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Dars jadvali</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a href="#" class="dropdown-item">Blok test</a></li>
+                <li><a class="dropdown-item" href="#">Foydali resurslar</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a href="/gallery" class="nav-link">Fotogalareya</a>
             </li>
             <li class="nav-item">
               <a href="/news" class="nav-link">Yangiliklar</a>
             </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <main>
-
+    <main id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="assets/img/image.jpg" alt="hero-image 1350x750">
+                    <div class="info">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/image-2.jpg" alt="hero-image 1350x750">
+                    <div class="info">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</p>
+                      <span>15-Jun 2023</span>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="assets/img/image-3.png" alt="hero-image 1350x750">
+                    <div class="info">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, assumenda.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
+    <script src="assets/js/splide.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
