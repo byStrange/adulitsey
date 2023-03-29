@@ -41,5 +41,7 @@ function generateCaptcha(canvas) {
 }
 
 const canvas = document.getElementById("captchaCanvas");
-const captcha = generateCaptcha(canvas);
-canvas.setAttribute("data-captcha", captcha);
+if (canvas) {
+  generateCaptcha(canvas);
+  canvas.setAttribute("data-captcha", captcha);
+}

@@ -11,8 +11,16 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid justify-content-center">
+    <nav
+      class="navbar navbar-expand-lg"
+      id="navbar"
+      style="
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <div class="container-fluid lg-justify-content-center">
         <a class="navbar-brand" href="/" style="width: 70px">
           <img src="assets/img/logo.png" alt="logo" width="50" />
         </a>
@@ -36,7 +44,6 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -45,18 +52,24 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Litsey haqida ma'lumot</a>
+                  <a class="dropdown-item" href="about.html"
+                    >Litsey haqida ma'lumot</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#">Rahbariyat</a></li>
-                <li><a class="dropdown-item" href="#">Ma'muriyat</a></li>
+                <li>
+                  <a class="dropdown-item" href="about.html">Rahbariyat</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about.html">Ma'muriyat</a>
+                </li>
               </ul>
             </li>
 
-            <li class="nav-item active">
-              <a href="/contact" class="nav-link">Bog'lanish</a>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Bog'lanish </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -70,21 +83,26 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Dars jadvali</a>
+                  <a class="dropdown-item" href="schedule.html">Dars jadvali</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <li><a href="#" class="dropdown-item">Blok test</a></li>
-                <li><a class="dropdown-item" href="#">Foydali resurslar</a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
+                <li>
+                  <a href="block-test.html" class="dropdown-item">Blok test</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="resources.html"
+                    >Foydali resurslar</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a href="/gallery" class="nav-link">Fotogalareya</a>
+              <a href="gallery.html" class="nav-link">Fotogalareya</a>
             </li>
             <li class="nav-item">
-              <a href="/news" class="nav-link">Yangiliklar</a>
+              <a href="all_news.html" class="nav-link">Yangiliklar</a>
             </li>
           </ul>
         </div>
